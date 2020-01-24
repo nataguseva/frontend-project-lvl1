@@ -7,4 +7,4 @@ This repository is working as project 1 by Hexlet-study.
 
 <img src="https://travis-ci.com/nataguseva/frontend-project-lvl1.svg?branch=master" alt="Build Status" />
 
-https://asciinema.org/connect/8d2ae3be-20d4-4c5b-90dc-bf74d9c1172c
+https://asciinema.org/a/sKmvQa01JO3Ja8ppZPvHTlbTk
