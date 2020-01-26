@@ -7,3 +7,4 @@ export { calcGameRightAnswer } from './calcGameRightAnswer.js';
 export { getCalcGameAnswer } from './getCalcGameAnswer.js';
 export { getGcdGameAnswer } from './getGcdGameAnswer.js';
 export { gcdGameRightAnswer } from './gcdGameRightAnswer.js';
+export { getProgressionGameAnswer } from './getProgressionGameAnswer.js';
