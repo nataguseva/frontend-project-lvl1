@@ -3,7 +3,7 @@ import {
     getAnswer,
     isEven,
     getUserName
-} from '..';
+} from '../';
 
 export const evenGame = () => {
     const userName = getUserName();

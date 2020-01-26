@@ -4,7 +4,7 @@ import {
     getCalcGameAnswer,
     calcGameRightAnswer,
     getUserName
-} from '..';
+} from '../';
 import {
     cons,
     car,
