@@ -8,3 +8,5 @@ export { getCalcGameAnswer } from './getCalcGameAnswer.js';
 export { getGcdGameAnswer } from './getGcdGameAnswer.js';
 export { gcdGameRightAnswer } from './gcdGameRightAnswer.js';
 export { getProgressionGameAnswer } from './getProgressionGameAnswer.js';
+export { getPrimeGameAnswer } from './getPrimeGameAnswer.js';
+export { isPrime } from './isPrime.js';

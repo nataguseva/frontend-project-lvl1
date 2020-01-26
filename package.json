@@ -1,10 +1,10 @@
 {
   "name": "Train-brains-lvl1",
-  "version": "1.0.2",
+  "version": "1.0.9",
   "description": "Hexlet-project-1",
   "main": "dist/index.js",
   "bin": {
-    "brain-progression": "dist/bin/brain-progression.js"
+    "brain-prime": "dist/bin/brain-prime.js"
   },
   "files": [
     "dist"

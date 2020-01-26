@@ -1,20 +1,20 @@
 import {
     generator,
-    getEvenGameAnswer,
-    isEven,
+    getPrimeGameAnswer,
+    isPrime,
     getUserName
 } from '../';
 
-export const evenGame = () => {
+export const primeGame = () => {
     const userName = getUserName();
 
-    console.log('Answer "yes" if the number is even, otherwise answer "no".');
+    console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
     console.log(`Hello, ${userName}!`);
     let counter = 0;
     while (counter < 3) {
-        const num = generator();
-        const answer = getEvenGameAnswer(num);
-        const rightAnswer = isEven(num);
+        const num = generator() % 100;
+        const answer = getPrimeGameAnswer(num);
+        const rightAnswer = isPrime(num);
         if (answer === rightAnswer) {
             console.log('Correct!');
             counter += 1;
