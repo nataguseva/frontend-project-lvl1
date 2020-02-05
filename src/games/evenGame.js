@@ -1,26 +1,18 @@
-import {
-    generator,
-    getEvenGameAnswer,
-    isEven,
-    getUserName
-} from '../';
+import { generator } from '../';
+import { game } from './index.js';
+import { cons } from '@hexlet/pairs';
+
+
+const ruleOfGame = 'Answer "yes" if the number is even, otherwise answer "no".';
+
 
 export const evenGame = () => {
-    const userName = getUserName();
-
-    console.log('Answer "yes" if the number is even, otherwise answer "no".');
-    console.log(`Hello, ${userName}!`);
-    let counter = 0;
-    while (counter < 3) {
+     
+    const getGameSet = () => {
         const num = generator();
-        const answer = getEvenGameAnswer(num);
-        const rightAnswer = isEven(num);
-        if (answer === rightAnswer) {
-            console.log('Correct!');
-            counter += 1;
-        } else {
-        console.log(`"${answer}" is wrong answer :(. Correct answer was "${rightAnswer}".\nLet's try again, ${userName}!`);
-        return;
-        }
-    } console.log(`Congratulations, ${userName}!`)
+        const rightAnswer = num % 2 === 0 ? 'yes' : 'no';
+        return cons(num, rightAnswer);
+    }
+    game();
 }
+ 

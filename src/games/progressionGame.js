@@ -4,6 +4,7 @@ import {
     getUserName
 } from '../';
 
+console.log('Welcome to the Brain Games!');
 export const progressionGame = () => {
     const userName = getUserName();
 

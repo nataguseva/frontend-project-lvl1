@@ -10,6 +10,7 @@ import {
     cdr
 } from '@hexlet/pairs';
 
+console.log('Welcome to the Brain Games!');
 export const gcdGame = () => {
     const userName = getUserName();
 
