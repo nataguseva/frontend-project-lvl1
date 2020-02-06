@@ -9,7 +9,6 @@ import {
 import { game } from './index.js';
 
 
-const ruleOfGame = 'What is the result of the expression?';
 const getGameSet = () => {
     let request = '';
     const num1 = generator() % 100;
@@ -28,14 +27,11 @@ const getGameSet = () => {
     };
     const pair = getOperation(num1, num2);
     request = `${num1} ${cdr(pair)} ${num2}`;
-    const rightAnswer = car(pair);
+    const rightAnswer = car(pair).toString();
     const gameSet = cons(request, rightAnswer);
     return gameSet;
 };
 export const calcGame = () => {
-    game();
-    
-    
-    
-    
-};
+    const ruleOfGame = 'What is the result of the expression?';
+    game(ruleOfGame, getGameSet);
+  }

@@ -1,27 +1,33 @@
 import {
-    generator,
-    getPrimeGameAnswer,
-    isPrime,
-    getUserName
-} from '../';
+    generator } from '../';
+import { game } from './index.js';
+import { cons } from '@hexlet/pairs';
 
-console.log('Welcome to the Brain Games!');
+
 export const primeGame = () => {
-    const userName = getUserName();
-
-    console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-    console.log(`Hello, ${userName}!`);
-    let counter = 0;
-    while (counter < 3) {
+    const ruleOfGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+    const getGameSet = () => {
         const num = generator() % 100;
-        const answer = getPrimeGameAnswer(num);
-        const rightAnswer = isPrime(num);
-        if (answer === rightAnswer) {
-            console.log('Correct!');
-            counter += 1;
-        } else {
-        console.log(`"${answer}" is wrong answer :(. Correct answer was "${rightAnswer}".\nLet's try again, ${userName}!`);
-        return;
+        const getRightAnswer = (num) => {
+            let result;
+        
+            if (num <= 1) {
+                result = 'no';
+            } else if (num === 2) {
+                result = 'yes';
+            } else {
+                for (let counter = 2; counter < num; counter += 1) {
+                    if (num % counter === 0) {
+                        result = 'no';
+                        break;
+                    }
+                    result = 'yes';
+                }
+            }
+            return result;
         }
-    } console.log(`Congratulations, ${userName}!`)
+        const rightAnswer = getRightAnswer(num).toString();
+        return cons(num, rightAnswer);
+    }
+    game(ruleOfGame, getGameSet);
 }

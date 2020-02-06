@@ -1,21 +1,16 @@
 import {
-    generator,
-    getProgressionGameAnswer,
-    getUserName
-} from '../';
+    generator } from '../';
+import { game } from './index.js';
+import { cons } from '@hexlet/pairs';
 
-console.log('Welcome to the Brain Games!');
+
 export const progressionGame = () => {
-    const userName = getUserName();
+    const ruleOfGame = 'What number is missing in the progression?';
 
-    console.log('What number is missing in the progression?');
-    console.log(`Hello, ${userName}!`);
-    let counter = 0;
-    while (counter < 3) {
+    const getGameSet = () => {
         const start = generator() % 10;
         const step = generator() % 10 + 1;
         const indexOfHiddenNumber = generator() % 10;
-
         let string = `${start}`;
         let nextNumber = start + step;
 
@@ -27,19 +22,10 @@ export const progressionGame = () => {
         string += ' ..';
 
         for (let i = indexOfHiddenNumber; i < 10; i += 1) {
-
             nextNumber += step;
             string += ` ${nextNumber}`;
         }
-    
-        const answer = getProgressionGameAnswer(string);
-    if (answer * 1 === rightAnswer) {
-        console.log('Correct!');
-        counter += 1;
-    } else {
-        console.log(`"${answer}" is wrong answer :(. Correct answer was "${rightAnswer}".\nLet's try again, ${userName}!`);
-        return;
+        return cons(string, rightAnswer.toString());
     }
-    }
-console.log(`Congratulations, ${userName}!`);
+    game(ruleOfGame, getGameSet);
 }

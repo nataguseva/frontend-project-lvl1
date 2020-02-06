@@ -6,29 +6,18 @@ export { primeGame } from './primeGame.js';
 
 
 
-/*import { calcGame,
-         ruleOfGame,
-         getGameSet } from './calcGame.js';*/
-/*import { evenGame,
-         ruleOfGame,
-         getGameSet } from './evenGame.js';*/
-/*import * as even from './evenGame.js';*/
-
-
-
 
 
 import readlineSync from 'readline-sync';
-import { cons, 
-         car, 
+import { car, 
          cdr } from '@hexlet/pairs';
 
-export const game = () => {
+export const game = (ruleOfGame, getGameSet) => {
         const QuantityOfRounds = 3;
-        const userName = readlineSync.question('May I have your name? ');
-
+         
 
 console.log('Welcome to the Brain Games!');
+const userName = readlineSync.question('May I have your name? ');
 console.log(`Hello, ${userName}!`);
 console.log(ruleOfGame);
 
@@ -38,8 +27,7 @@ let counter = 0;
         const request = car(gameSet);
         const rightAnswer = cdr(gameSet);
         const answer = readlineSync.question(`Question: ${request}\nYour answer: `);
-        const normAnswer = answer * 1 === NaN ? answer : answer * 1;
-        if (normAnswer === rightAnswer) {
+        if (answer === rightAnswer) {
             console.log('Correct!');
             counter += 1;
         } else {

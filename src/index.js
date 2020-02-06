@@ -1,12 +1,3 @@
 export { getUserName } from './getUserName.js';
-export { getEvenGameAnswer } from './getEvenGameAnswer.js';
 export { generator } from './generator.js';
-export { isEven } from './isEven.js';
-export { getOperation } from './getOperation.js';
-export { calcGameRightAnswer } from './calcGameRightAnswer.js';
-export { getCalcGameAnswer } from './getCalcGameAnswer.js';
-export { getGcdGameAnswer } from './getGcdGameAnswer.js';
-export { gcdGameRightAnswer } from './gcdGameRightAnswer.js';
 export { getProgressionGameAnswer } from './getProgressionGameAnswer.js';
-export { getPrimeGameAnswer } from './getPrimeGameAnswer.js';
-export { isPrime } from './isPrime.js';
