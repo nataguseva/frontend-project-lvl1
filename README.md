@@ -1,6 +1,6 @@
 This repository is working as project 1 by Hexlet-study.
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/8c895a18b62f10ad27ec/maintainability)](https://codeclimate.
+[![Maintainability](https://api.codeclimate.com/v1/badges/8c895a18b62f10ad27ec/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/8c895a18b62f10ad27ec/test_coverage)](https://codeclimate.com/github/nataguseva/frontend-project-lvl1/test_coverage)
 
 <img src="https://travis-ci.com/nataguseva/frontend-project-lvl1.svg?branch=master" alt="Build Status" />
