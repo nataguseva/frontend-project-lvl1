@@ -1,9 +1,8 @@
 This repository is working as project 1 by Hexlet-study.
 
-https://codeclimate.com/repos/5e2694f0d99fd001650090fe/settings/test_reporter
+https://api.codeclimate.com/v1/badges/8c895a18b62f10ad27ec/maintainability
 
-https://codeclimate.com/repos/5e2694f0d99fd001650090fe/settings/test_reporter
-
+https://api.codeclimate.com/v1/badges/8c895a18b62f10ad27ec/test_coverage
 
 <img src="https://travis-ci.com/nataguseva/frontend-project-lvl1.svg?branch=master" alt="Build Status" />
 
