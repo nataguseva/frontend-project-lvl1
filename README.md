@@ -6,16 +6,16 @@ This repository is working as project 1 by Hexlet-study.
 [![Build Status](https://travis-ci.com/nataguseva/frontend-project-lvl1.svg?branch=master)](https://travis-ci.com/nataguseva/frontend-project-lvl1)
 
 brain-even
-[![asciicast](https://asciinema.org/a/mOwOnJOwXQBKQcJeXOc9bM0QF.svg)](https://asciinema.org/a/mOwOnJOwXQBKQcJeXOc9bM0QF?autoplay=2)
+[![asciicast](https://asciinema.org/a/mOwOnJOwXQBKQcJeXOc9bM0QF.svg)](https://asciinema.org/a/mOwOnJOwXQBKQcJeXOc9bM0QF?speed=2)
 
 brain-calc
-https://asciinema.org/a/1f1cNxCAS7F1SKUqT45FaZ3ux
+[![asciicast](https://asciinema.org/a/8j4xAlBeLT7sm9bGUee54VaMW.svg)](https://asciinema.org/a/8j4xAlBeLT7sm9bGUee54VaMW?speed=2)
 
 brain-gcd
-https://asciinema.org/a/JkmjLhMhXosqjKq9azMQWgMSA
+[![asciicast](https://asciinema.org/a/VzMyBGMSz0RSogPFYVavAWGQn.svg)](https://asciinema.org/a/VzMyBGMSz0RSogPFYVavAWGQn?speed=2)
 
 brain-progression
-https://asciinema.org/a/ZXwCgzUwylHA53bZgjeYFLwnW
+[![asciicast](https://asciinema.org/a/WHk4v7BAc8Q5ZUXEQ29mlWkRr.svg)](https://asciinema.org/a/WHk4v7BAc8Q5ZUXEQ29mlWkRr?speed=2)
 
 brain-prime
-https://asciinema.org/a/c8LWFyLpYuGdcmAOhxzARxx3b
+[![asciicast](https://asciinema.org/a/wtPV2RZoDgvWNLb9d6Qyg4t1t.svg)](https://asciinema.org/a/wtPV2RZoDgvWNLb9d6Qyg4t1t?speed=2)
