@@ -6,6 +6,8 @@ This repository is working as project 1 by Hexlet-study.
 [![Build Status](https://travis-ci.com/nataguseva/frontend-project-lvl1.svg?branch=master)](https://travis-ci.com/nataguseva/frontend-project-lvl1)
 
 brain-even
+[![asciicast](https://asciinema.org/a/mOwOnJOwXQBKQcJeXOc9bM0QF.svg)](https://asciinema.org/a/mOwOnJOwXQBKQcJeXOc9bM0QF)
+<script id="asciicast-mOwOnJOwXQBKQcJeXOc9bM0QF" src="https://asciinema.org/a/mOwOnJOwXQBKQcJeXOc9bM0QF.js" async></script>
 <script id="asciicast-mOwOnJOwXQBKQcJeXOc9bM0QF" src="https://asciinema.org/a/mOwOnJOwXQBKQcJeXOc9bM0QF.js" async></script>
 https://asciinema.org/a/sKmvQa01JO3Ja8ppZPvHTlbTk
 
