@@ -1,5 +1,7 @@
 /node_modules/
 dist
 .vscode
+jsconfig.json
+project_1.code-workspace
 
 
