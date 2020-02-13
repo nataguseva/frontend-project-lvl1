@@ -1,8 +1,3 @@
-const generator = () => {
-  let num = Math.floor(Math.random() * 1000);
-  while (num === 0) {
-    num = Math.floor(Math.random() * 1000);
-  }
-  return num;
-};
+const generator = (max) => 1 + Math.ceil(Math.random() * max);
+
 export default generator;

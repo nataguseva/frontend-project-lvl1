@@ -1,12 +1,12 @@
 import { cons } from '@hexlet/pairs';
 import generator from '../generator.js';
-import game from './index.js';
+import game from '..';
 
 const ruleOfGame = 'What number is missing in the progression?';
 const getGameSet = () => {
-  const start = generator() % 10;
-  const step = (generator() % 10) + 1;
-  const indexOfHiddenNumber = generator() % 10;
+  const start = generator(10);
+  const step = generator(10);
+  const indexOfHiddenNumber = generator(10);
   let string = `${start}`;
   let nextNumber = start + step;
   for (let i = 0; i < indexOfHiddenNumber; i += 1) {
@@ -21,7 +21,7 @@ const getGameSet = () => {
   }
   return cons(string, rightAnswer.toString());
 };
-const progressionGame = () => {
+const runProgressionGame = () => {
   game(ruleOfGame, getGameSet);
 };
-export default progressionGame;
+export default runProgressionGame;
