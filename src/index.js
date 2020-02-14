@@ -12,15 +12,13 @@ const game = (ruleOfGame, getGameSet) => {
   console.log(`Hello, ${userName}!`);
   console.log(ruleOfGame);
 
-  let counter = 0;
-  while (counter < QuantityOfRounds) {
+  for (let counter = 0; counter < QuantityOfRounds; counter += 1) {
     const gameSet = getGameSet();
-    const request = car(gameSet);
+    const question = car(gameSet);
     const rightAnswer = cdr(gameSet);
-    const answer = readlineSync.question(`Question: ${request}\nYour answer: `);
+    const answer = readlineSync.question(`Question: ${question}\nYour answer: `);
     if (answer === rightAnswer) {
       console.log('Correct!');
-      counter += 1;
     } else {
       console.log(`"${answer}" is wrong answer :(. Correct answer was "${rightAnswer}".\nLet's try again, ${userName}!`);
       return;
