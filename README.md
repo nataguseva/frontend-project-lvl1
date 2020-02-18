@@ -6,24 +6,24 @@ This repository is working as project 1 by Hexlet-study.
 
 building of projects
 
-[![asciicast](https://asciinema.org/a/e2Oz57N90rDs37HhZ9A9r4Xp3.svg)](https://asciinema.org/a/e2Oz57N90rDs37HhZ9A9r4Xp3?speed=2)
+[![asciicast](https://asciinema.org/a/GemqtRU5jjJJNOjPRig4RoCl0.svg)](https://asciinema.org/a/GemqtRU5jjJJNOjPRig4RoCl0??speed=2)
 
 brain-even
 
-[![asciicast](https://asciinema.org/a/5rao951amoZecHBrqPk4iUapC.svg)](https://asciinema.org/a/5rao951amoZecHBrqPk4iUapC?speed=2)
+[![asciicast](https://asciinema.org/a/Pz0eF4BTJ81o6yCXunTnfPSfj.svg)](https://asciinema.org/a/Pz0eF4BTJ81o6yCXunTnfPSfj?speed=2)
 
 brain-calc
 
-[![asciicast](https://asciinema.org/a/NHy9usYljx3Tb4rlrSeRULqU8.svg)](https://asciinema.org/a/NHy9usYljx3Tb4rlrSeRULqU8?speed=2)
+[![asciicast](https://asciinema.org/a/KVTKgOhPiFyBluvPnOpowo3m5.svg)](https://asciinema.org/a/KVTKgOhPiFyBluvPnOpowo3m5?speed=2)
 
 brain-gcd
 
-[![asciicast](https://asciinema.org/a/oxAlNTsKkoZq3uMzkzTPIarGY.svg)](https://asciinema.org/a/oxAlNTsKkoZq3uMzkzTPIarGY?speed=2)
+[![asciicast](https://asciinema.org/a/UDUXprN1raAyfcNux9IDmxS1N.svg)](https://asciinema.org/a/UDUXprN1raAyfcNux9IDmxS1N?speed=2)
 
 brain-progression
 
-[![asciicast](https://asciinema.org/a/77qXVYc49QFsoZebtrJ2tYFHN.svg)](https://asciinema.org/a/77qXVYc49QFsoZebtrJ2tYFHN?speed=2)
+[![asciicast](https://asciinema.org/a/GXelN1XkgkAnaffNTcH1X3Poi.svg)](https://asciinema.org/a/GXelN1XkgkAnaffNTcH1X3Poi?speed=2)
 
 brain-prime
 
-[![asciicast](https://asciinema.org/a/bYRlyYAo8sw70LrS7qxHBKr27.svg)](https://asciinema.org/a/bYRlyYAo8sw70LrS7qxHBKr27?speed=2)
+[![asciicast](https://asciinema.org/a/FhLgbuQz9qQ9gKV5gcBwsJxKX.svg)](https://asciinema.org/a/FhLgbuQz9qQ9gKV5gcBwsJxKX?speed=2)

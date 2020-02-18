@@ -42,5 +42,10 @@
   "dependencies": {
     "@hexlet/pairs": "^1.0.10",
     "readline-sync": "^1.4.10"
-  }
+  },
+  "keywords": [
+    "game",
+    "ariphmetic",
+    "easy"
+  ]
 }

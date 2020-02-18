@@ -6,13 +6,13 @@ import {
 } from '@hexlet/pairs';
 
 const QuantityOfRounds = 3;
-const game = (ruleOfGame, getGameSet) => {
+const runGame = (ruleOfGame, getGameSet) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(ruleOfGame);
 
-  for (let counter = 0; counter < QuantityOfRounds; counter += 1) {
+  for (let round = 0; round < QuantityOfRounds; round += 1) {
     const gameSet = getGameSet();
     const question = car(gameSet);
     const rightAnswer = cdr(gameSet);
@@ -26,4 +26,4 @@ const game = (ruleOfGame, getGameSet) => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
-export default game;
+export default runGame;
