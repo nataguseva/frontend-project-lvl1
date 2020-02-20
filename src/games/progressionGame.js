@@ -3,23 +3,21 @@ import getRandomNumber from '../randomNumber.js';
 import runGame from '..';
 
 const ruleOfGame = 'What number is missing in the progression?';
-const getMissingNumber = (start, diff, index) => start + diff * index;
+const progressionsLength = 10;
 const getGameSet = () => {
   const start = getRandomNumber(1, 10);
   const diff = getRandomNumber(1, 10);
-  const indexOfMissingNumber = getRandomNumber(0, 9);
-  let string = `${start}`;
-  let nextNumber = start + diff;
-  const rightAnswer = getMissingNumber(start, diff, indexOfMissingNumber);
-  for (let i = 0; i <= 9; i += 1) {
-    if (nextNumber === rightAnswer || start === rightAnswer) {
-      string += ' ..';
-      nextNumber += diff;
+  const indexOfMissingNumber = getRandomNumber(1, progressionsLength);
+  let question = `${start}`;
+  const rightAnswer = start + diff * indexOfMissingNumber;
+  for (let i = 1; i <= progressionsLength; i += 1) {
+    if (i === indexOfMissingNumber) {
+      question += ' ..';
+      i += 1;
     }
-    string += ` ${nextNumber}`;
-    nextNumber += diff;
+    question += ` ${start + diff * i}`;
   }
-  return cons(string, rightAnswer.toString());
+  return cons(question, rightAnswer.toString());
 };
 const runProgressionGame = () => {
   runGame(ruleOfGame, getGameSet);

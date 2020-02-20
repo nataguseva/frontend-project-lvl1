@@ -1,4 +1,3 @@
-
 import readlineSync from 'readline-sync';
 import {
   car,
@@ -16,11 +15,13 @@ const runGame = (ruleOfGame, getGameSet) => {
     const gameSet = getGameSet();
     const question = car(gameSet);
     const rightAnswer = cdr(gameSet);
-    const answer = readlineSync.question(`Question: ${question}\nYour answer: `);
+    console.log(`Question: ${question}`);
+    const answer = readlineSync.question('Your answer: ');
     if (answer === rightAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`"${answer}" is wrong answer :(. Correct answer was "${rightAnswer}".\nLet's try again, ${userName}!`);
+      console.log(`"${answer}" is wrong answer :(. Correct answer was "${rightAnswer}"`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
   }

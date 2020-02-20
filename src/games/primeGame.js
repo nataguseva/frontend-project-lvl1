@@ -13,7 +13,7 @@ const isPrime = (num) => {
 };
 
 const getGameSet = () => {
-  const question = getRandomNumber(1, 100);
+  const question = getRandomNumber(1, 100).toString();
   const rightAnswer = isPrime(question) ? 'yes' : 'no';
   return cons(question, rightAnswer);
 };

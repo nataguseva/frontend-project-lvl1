@@ -4,7 +4,7 @@ import runGame from '..';
 
 const ruleOfGame = 'What is the result of the expression?';
 const operators = '+-*';
-const getOperator = () => operators[getRandomNumber(1, 3) % 3];
+const getOperator = () => operators[getRandomNumber(0, operators.length - 1)];
 const getResultOfCalc = (num1, num2, operator) => {
   switch (operator) {
     case '+':

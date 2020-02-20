@@ -4,7 +4,7 @@ import runGame from '..';
 
 const ruleOfGame = 'Find the greatest common divisor of given numbers!';
 const getGCD = (num1, num2) => {
-  if (num1 % num2 === 0) {
+  if (!(num1 % num2)) {
     return num2;
   } return getGCD(num2, num1 % num2);
 };
@@ -13,8 +13,7 @@ const getGameSet = () => {
   const num2 = getRandomNumber(1, 100);
   const question = `${num1} ${num2}`;
   const rightAnswer = getGCD(num1, num2).toString();
-  const gameSet = cons(question, rightAnswer);
-  return gameSet;
+  return cons(question, rightAnswer);
 };
 
 const runGcdGame = () => {
