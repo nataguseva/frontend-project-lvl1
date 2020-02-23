@@ -4,14 +4,14 @@ import {
   cdr,
 } from '@hexlet/pairs';
 
-const QuantityOfRounds = 3;
+const quantityOfRounds = 3;
 const runGame = (ruleOfGame, getGameSet) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(ruleOfGame);
 
-  for (let round = 0; round < QuantityOfRounds; round += 1) {
+  for (let round = 0; round < quantityOfRounds; round += 1) {
     const gameSet = getGameSet();
     const question = car(gameSet);
     const rightAnswer = cdr(gameSet);

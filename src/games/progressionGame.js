@@ -10,12 +10,12 @@ const getGameSet = () => {
   const indexOfMissingNumber = getRandomNumber(1, progressionsLength);
   let question = `${start}`;
   const rightAnswer = start + diff * indexOfMissingNumber;
-  for (let i = 1; i <= progressionsLength; i += 1) {
+  for (let i = 1; i < progressionsLength; i += 1) {
     if (i === indexOfMissingNumber) {
-      question += ' ..';
+      question = `${question} ..`;
       i += 1;
     }
-    question += ` ${start + diff * i}`;
+    question = `${question} ${start + diff * i}`;
   }
   return cons(question, rightAnswer.toString());
 };

@@ -22,9 +22,8 @@ const getGameSet = () => {
   const num2 = getRandomNumber(1, 10);
   const operator = getOperator();
   const question = `${num1} ${operator} ${num2}`;
-  const rightAnswer = getResultOfCalc(num1, num2, operator).toString();
-  const gameSet = cons(question, rightAnswer);
-  return gameSet;
+  const rightAnswer = getResultOfCalc(num1, num2, operator);
+  return cons(question, rightAnswer.toString());
 };
 const runCalcGame = () => {
   runGame(ruleOfGame, getGameSet);
