@@ -8,14 +8,14 @@ const getGameSet = () => {
   const start = getRandomNumber(1, 10);
   const diff = getRandomNumber(1, 10);
   const indexOfMissingNumber = getRandomNumber(1, progressionsLength);
-  let question = `${start}`;
+  let question = '';
   const rightAnswer = start + diff * indexOfMissingNumber;
-  for (let i = 1; i < progressionsLength; i += 1) {
+  for (let i = 0; i <= progressionsLength - 1; i += 1) {
     if (i === indexOfMissingNumber) {
       question = `${question} ..`;
-      i += 1;
+    } else {
+      question = `${question} ${start + diff * i}`;
     }
-    question = `${question} ${start + diff * i}`;
   }
   return cons(question, rightAnswer.toString());
 };
